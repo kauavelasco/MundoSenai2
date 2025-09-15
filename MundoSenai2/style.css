@@ -1,0 +1,87 @@
+:root{
+    --corAzul: #003366;
+    --laranjaVibrante: #FF6600;
+    --cinzaClaro: #F5F5F5;
+    --cinzaEscuro: #333333;
+    --branco: #Ffff;
+    --azulClaro: #66CCFF;
+}
+
+body{
+    background-color: var(--cinzaClaro);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    height: 6.5rem;
+}
+
+nav.navbar-transparente{
+    padding: 15px 0;
+    background: var(--corAzul);
+}
+
+.caixa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navprincipal a{
+    font-weight: bold;
+}
+
+section img{
+    border: 3px solid var(--cinzaEscuro);
+    box-shadow: 10px 11px 11px -1px #000000;
+    transition: all 0.4s;
+}
+
+section img:hover{
+    transform: translateY(-10px);
+}
+
+#sobre{
+    border-bottom: 3px dashed var(--corAzul);
+}
+
+#materia{
+    border-bottom: 3px dashed var(--corAzul);
+}
+
+.exemplo {
+    width: 200px;
+    height: 200px;
+    background-color: var(--laranjaVibrante);
+}
+
+.caixa{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+@media (max-width: 575.98px) {
+    .navbar{
+        height: 12rem;
+    }
+}
+
+/*Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/*Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {}
