@@ -1,5 +1,5 @@
 :root{
-    --corAzul: #003366;
+    --corAzul: rgba(0, 51, 102, 0.95);
     --laranjaVibrante: #FF6600;
     --cinzaClaro: #F5F5F5;
     --cinzaEscuro: #333333;
@@ -38,6 +38,17 @@ nav.navbar-transparente{
     font-weight: bold;
 }
 
+.navbar-dark .navbar-nav .nav-link{
+    color: #F5F5F5;
+    transition: all 0.4s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color: #ffff;
+    transform: scale(1.1);
+}
+
 section img{
     border: 3px solid var(--cinzaEscuro);
     box-shadow: 10px 11px 11px -1px #000000;
@@ -56,9 +67,25 @@ section img:hover{
     border-bottom: 3px dashed var(--corAzul);
 }
 
+#vantagens{
+    border-bottom: 3px dashed var(--corAzul);
+}
+
+.area-exemplo{
+    border: 1px solid var(--cinzaEscuro);
+    height: 400px;
+    text-align: center;
+}
+
+.area-exemplo h2{
+    margin-top: 20px;
+}
+
 .exemplo {
     width: 200px;
     height: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
     background-color: var(--laranjaVibrante);
 }
 
@@ -67,15 +94,69 @@ section img:hover{
     padding-bottom: 150px;
 }
 
+.btn-social-facebook {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.btn-social-instagram {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.btn-social-facebook:hover {
+  background-color: var(--azulClaro); /* Vermelho SENAI */
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.btn-social-instagram:hover {
+  background-color: var(--laranjaVibrante); /* Vermelho SENAI */
+  color: #fff;
+  transform: scale(1.1);
+}
+
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
 @media (max-width: 575.98px) {
     .navbar{
         height: 12rem;
     }
+
+    #navprincipal .navbar-nav {
+    background: var(--corAzul);
+    border-radius: 6px;
+  }
+
+  #sobre{
+    margin-top: 3rem;
+  }
 }
 
 /*Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar{
+        height: 12rem;
+    }
+
+    #navprincipal .navbar-nav {
+    background: var(--corAzul);
+    border-radius: 6px;
+  }
+
+  #sobre{
+    margin-top: 3rem;
+  }
+}
 
 /*Dispositivos médios (tablets com 768px ou mais)*/
 @media (min-width: 768px) and (max-width: 991.98px) {}
